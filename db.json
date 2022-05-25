@@ -1,0 +1,468 @@
+{
+  "newGoodses": [
+    {
+      "id": 1,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 251,
+      "counter": "猜你喜欢",
+      "showComment": true,
+      "commentTop": ""
+     
+    },
+    {
+      "id": 2,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 252,
+      "counter": "猜你喜欢",
+      "commentTop": "haod ",
+      "showComment": true
+      
+    },
+    {
+      "id": 3,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 253,
+      "counter": "猜你喜欢",
+      "commentTop": "新品真太酷了 ",
+      "showComment": true
+    
+    },
+    {
+      "id": 4,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 254,
+      "counter": "猜你喜欢",
+      "commentTop": "新品真太酷了 ",
+      "showComment": true
+
+    },
+    {
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 255,
+      "counter": "猜你喜欢",
+      "id": 5,
+      "showComment": true,
+      "commentTop": "新品真太酷了 "
+    
+    },
+    {
+      "id": 6,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 2110,
+      "counter": "猜你喜欢",
+      "showComment": true,
+      "commentTop": "新品真太酷了 "
+    },
+    {
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 25000,
+      "counter": "猜你喜欢",
+      "showComment": true,
+      "id": 10,
+      "commentTop": "新品真太酷了 "
+    }
+  ],
+  "hotGoodses": [
+    {
+      "id": 1,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/images/3bfc7c72-b56a-4088-8acf-e01e830ce72a.jpg",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 250,
+      "counter": "猜你喜欢",
+      "showComment": true,
+      "commentTop": "hao",
+      "commmentBottom": "有意思"
+    },
+    {
+      "id": 2,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc":"http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 250,
+      "counter": "猜你喜欢",
+      "commentTop": "hao",
+      "commmentBottom": "有意思",
+      "showComment": true
+    },
+    {
+      "id": 3,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 250,
+      "counter": "猜你喜欢",
+      "commnetTop": "nnn",
+      "showComment": true
+    },
+    {
+      "id": 4,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc":"http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 250,
+      "counter": "猜你喜欢",
+      "showComment": true
+   
+    },
+    {
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
+      "price": 280,
+      "counter": "猜你喜欢",
+      "showComment": true,
+      "id": 5
+    }
+    
+  ],
+  "subBannerses" :[
+
+    {
+      "id": 1,
+      "link": "/goods/detail/10195",
+      "imgSrc": "https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/mate40-white.png",
+      "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
+     
+    },
+    {
+      "id": 2,
+      "link": "/goods/detail/10195",
+      "imgSrc":  "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
+     
+    },
+    {
+      "id": 3,
+      "link": "/goods/detail/10195",
+      "imgSrc":  "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
+     
+    },
+    {
+      "id": 1,
+      "link": "/goods/detail/10195",
+      "imgSrc": "https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/mate40-white.png",
+      "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
+     
+    },
+    {
+      "id": 2,
+      "link": "/goods/detail/10195",
+      "imgSrc":  "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
+     
+    },
+    {
+      "id": 3,
+      "link": "/goods/detail/10195",
+      "imgSrc":  "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
+     
+    }
+    
+
+
+  ],
+
+  "categories": [
+    {
+      "categoryName": "家电 数码 手机",
+      "link": "/goods/detail/10195",
+      "categories": [
+        {
+          "categoryName": "家电",
+          "link": "/goods/detail/10195",
+          "categories": [
+            {
+              "categoryName": "卷发器",
+              "link": "/goods/detail/10195"
+            },
+            {
+              "categoryName": "电饭煲",
+              "link": "/goods/detail/10195"
+            }
+          ]
+        },
+        {
+          "categoryName": "数码",
+          "categories": []
+        },
+        {
+          "categoryName": "手机",
+          "categories": []
+        }
+      ]
+    },
+    {
+      "categoryName": "女装 男装 穿搭",
+      "link": "/goods/detail/10195",
+      "categories": [
+        {
+          "categoryName": "女装",
+          "link": "/goods/detail/10195",
+          "categories": [
+            {
+              "categoryName": "外套",
+              "link": "/goods/detail/10195"
+            },
+            {
+              "categoryName": "裙子",
+              "link": "/goods/detail/10195"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "家具 家饰 家纺",
+      "link": "/goods/detail/10195",
+      "categories": [
+        {
+          "categoryName": "家具",
+          "link": "/goods/detail/10195",
+          "categories": [
+            {
+              "categoryName": "沙发",
+              "link": "/goods/detail/10195"
+            }
+          ]
+        }
+      ]
+      
+    },
+    { "categoryName":"运动 户外 乐器",
+      "link": "/goods/detail/10195",
+      "categories":[{
+        "categoryName":"运动",
+        "link": "/goods/detail/10195",
+        "categories":[{
+
+          "categoryName":"运动",
+          "link":"/goods/detail/10195"
+
+
+        }]
+
+
+
+      }
+        
+
+
+      ]
+    },
+    { "categoryName":"游戏 动漫 影视",
+      "link": "/goods/detail/10195",
+      "categories":[{
+        "categoryName":"游戏",
+        "link": "/goods/detail/10195",
+        "categories":[{
+
+          "categoryName":"LOL",
+          "link":"/goods/detail/10195"
+
+
+        }]
+
+
+
+      }
+        
+
+
+      ]
+    },
+    { "categoryName":"游戏 动漫 影视",
+      "categories":[{
+        "categoryName":"游戏",
+        "categories":[{
+
+          "categoryName":"LOL",
+          "link":"/goods/detail/10195"
+
+
+        }]
+
+
+
+      }
+        
+
+
+      ]
+    }
+  ],
+  "swiper": [
+    {
+      "id": 1,
+      "link":"/detail/review/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png"
+    },
+    {
+      "id": 2,
+      "link": "/goods/detail/10195",
+      "tittle": "智能降噪 长久续航",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png"
+    },
+    {
+      "id": 3,
+      "link": "/goods/detail/10195",
+      "tittle": "索尼1 WH-1000XM3 ",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png"
+    },
+    {
+      "id": 4,
+      "link": "/goods/detail/10195",
+      "tittle": "索尼1 WH-1000XM3 ",
+      "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png"
+    }
+  ],
+  "goodsDetail": [
+    {
+      "id":1,
+      "goodsId": 10195,
+      "goodsName": "xiaomi"
+    },
+    {
+      "id":2,
+      "goodsId": 10196,
+      "goodsName": "sony"
+    }
+  ],
+  
+  "reviewScore": [
+    {
+      "link":"/detail/review/10195",
+      "goodsId": 10195,
+      "allScore":4,
+      "reviewCount":8,
+      "fiveCount":6,
+      "fourCount":3,
+      "threeCount":2,
+      "twoCount":0,
+      "oneCount":0
+
+    }
+      
+  ],
+  "goodsReviewRating": [
+    {
+      "goodsId": 10195,
+      "rating": [
+        {
+          "rating": 5,
+          "percentnumber": 0,
+          "ratingCount": 1
+        },
+        {
+          "rating": 4,
+          "percentnumber": 0,
+          "ratingCount": 3
+        },
+        {
+          "rating": 3,
+          "percentnumber": 0,
+          "ratingCount": 1
+        },
+        {
+          "rating": 2,
+          "percentnumber": 0,
+          "ratingCount": 0
+        },
+        {
+          "rating": 1,
+          "percentnumber": 0,
+          "ratingCount": 0
+        }
+      ]
+    }
+  ],
+  "goodsReview": [
+    {
+      "id": 1,
+      "rating": 5,
+      "nickName": "john",
+      "goodsId": 10195,
+      "goodsName": "索尼1 WH-1000XM3o",
+      "count": 4,
+      "title": "かっここい",
+      "content": "很好用很性价比",
+      "photo1": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "photo2": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "reviewDate": "2022-04-19"
+    },
+    {
+      "id": 2,
+      "rating": 4,
+      "nickName": "mike",
+      "goodsId": 10195,
+      "goodsName": "索尼1 WH-1000XM3 ",
+      "count": 5,
+      "title": "すごい",
+      "content": "下次再来",
+      "photo1": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
+      "photo2": "null",
+      "reviewDate": "2021-08-24"
+    },
+    {
+      "id": 2,
+      "rating": 4,
+      "nickName": "mike",
+      "goodsId": 10195,
+      "goodsName": "索尼1 WH-1000XM3 ",
+      "count": 5,
+      "title": "すごい",
+      "content": "太酷了",
+      "photo1": "https://p1-a50ece1c.imageflux.jp/c/f=webp:jpeg,w=1024,h=1024,a=0/store/reviewattachmentfile/53/11658/file/687293326ce016e7c40a701553636ac8.jpg",
+      "photo2": "null",
+      "reviewDate": "2021-08-24"
+    }
+    
+  ],
+  "ReviewTotal": [
+    {
+      "goodsId": 10195,
+      "avgScore": 4.0,
+      "reviewCount": 3,
+      "titleCount": 5
+    },
+    {
+      "goodsId": 10196,
+      "avgScore": 3.2,
+      "reviewCount": 3,
+      "titleCount": 9
+    }
+  ]
+  
+
+
+
+}
