@@ -3,7 +3,7 @@
     <p class="g-label-brand g-reviewList_label">ピックアップレビュー</p>
     <ul class="g-reviewList">
       <review-list-view
-        v-for="(review, index) in reviewList"
+        v-for="(review, index) in reviews"
         :key="index"
         v-bind:review="review"
       ></review-list-view>
@@ -34,8 +34,7 @@
         data-label="閉じる"
         data-accordion='{"scroll":false}'
       >
-        <i class="g-i g-i-arrow-d"></i
-        ><span>{{ text }}（<span id="js-reviews-more"> </span>）</span></a
+        <i class="g-i g-i-arrow-d"></i><span>({{ text }})</span></a
       >
     </p>
   </div>
@@ -47,7 +46,6 @@ import { useStore } from "vuex";
 import { useRoute } from "vue-router";
 // import ReviewCom from "./ReviewCom.vue";
 import ReviewListView from "./reviewListView.vue";
-import ReviewListHidden from "./reviewListHidden.vue";
 
 // export default {
 //   ReviewListView,
@@ -73,15 +71,15 @@ onMounted(() => {
   store.dispatch("setReview", { goodsId: goodsId, offset: 0 });
 });
 
-const reviewCount = computed(() => store.getters.getReview.reviewCount);
-const reviewList = computed(() => store.getters.getReview.reviewList);
-const reviewList2 = computed(() => store.getters.getReviewsList);
-const showed = computed(() => store.getters.getShowed);
+let reviewCount = computed(() => store.getters.getReview.reviewCount);
+let reviews = computed(() => store.getters.getReview.reviewList);
+let reviewList2 = computed(() => store.getters.getReviewList);
+let showed = computed(() => store.getters.getShowed);
 
 const text = computed(() => {
-  if (!showed.value && reviewList.value !== undefined) {
+  if (!showed.value && reviews.value !== undefined) {
     return (
-      "もっと見る (" + reviewList.value.length + "/" + reviewCount.value + ")"
+      "もっと見る (" + reviews.value.length + "/" + reviewCount.value + ")"
     );
   } else {
     return "閉じる";

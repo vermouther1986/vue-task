@@ -9,9 +9,9 @@ const url = "http://localhost:3000/goods/review/goodsId/:goodsId/offset/:offset"
     // goods:{},
     review:{},
     showed:false,
-    reviewlist:[],
+    reviewList:[],
    },
-   mutations: {
+   mutations:{
      //syncrous
     //  setreviewsList(state, payload) {
     //  state.reviewslist.push(...payload);
@@ -21,10 +21,10 @@ const url = "http://localhost:3000/goods/review/goodsId/:goodsId/offset/:offset"
       setReview(state, payload) {
         // state.reviewslist.push(...payload);
          state.review = payload[0];
-         console.log("array push ", payload);
+         console.log("array push ", payload[0]);
      },
      setReviewList(state, payload) {
-       state.reviewlist.push(...payload);
+       state.reviewList.push(...payload);
       //  state.reviews = payload[0];
        console.log("array push ", payload);
    },
@@ -42,27 +42,27 @@ const url = "http://localhost:3000/goods/review/goodsId/:goodsId/offset/:offset"
       const newurl=url
       .replace(":goodsId",goodsId)
       .replace(":offset",offset)
-      const goods = await fetch(newurl,{headers})
+      const goods = await fetch(newurl,{headers});
        const j = await goods.json();
        if(offset===0){
 
         context.commit("setReview", j);
        }else{
          context.commit("setShowed",true);
-         context.commit("setReviewList",j[0].reviewlist);
+         context.commit("setReviewList",j[0].reviewList);
        }
      },
    },
   getters: {
     getReview: (state) => {
-      console.log("in getreviews method", state.getReview);
-      console.log(state.getReview);
-      return state.getReview;
+      console.log("in getReview method", state.getReview);
+      console.log(state.review);
+      return state.review;
     },
     getReviewList: (state) => {
-       console.log("in  getReviewList method", state.reviewlist);
-       console.log(state.reviewlist);
-       return state.reviewlist;
+       console.log("in  getReviewList method", state.reviewList);
+       console.log(state.reviewList);
+       return state.reviewList;
      },
      getShowed: (state) => {
       console.log("in getShowed method", state.showed);
