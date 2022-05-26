@@ -31,16 +31,15 @@ export default {
       rating: Number,
       allScore: Number,
       reviewCount: Number,
-      percentnumber: Number,
       ratingCount: Number,
     },
   },
   data() {
     return {
-      with: '100%',
+      width: this.ratingobj.ratingCount *100+"%",
       title:
         "レビューの" +
-        this.ratingobj.percentnumber +
+        this.ratingobj.ratingCount*100 +
         "%に星" +
         this.ratingobj.rating +
         "つが付いています。",

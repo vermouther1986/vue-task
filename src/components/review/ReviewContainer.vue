@@ -23,36 +23,20 @@
         </div>
       </div>
     </div>
-    <div class="g-foot-v g-foot-sm" id="js-review-more" aria-hidden="false">
-      <p class="g-align-tc">
-        <a
-          class="g-link displaymorereview"
-          href="#p-reviewMore"
-          role="button"
-          aria-expanded="false"
-          aria-controls="p-reviewMore"
-          data-label="閉じる"
-          data-accordion='{"scroll":false}'
-        >
-          <i class="g-i g-i-arrow-d"></i
-          ><span
-            >レビューをもっと見る（3/<span id="js-reviews-more">7</span>）</span
-          ></a
-        >
-      </p>
-    </div>
+   
   </section>
 </template>
 
 <script setup>
-// import { useRoute } from "vue-router";
+// import { computed } from "vue";
 // import { useStore } from "vuex";
-//  import { computed, onMounted } from "vue";
-// import { mapActions, mapGetters } from "vuex";
+// import { useRoute } from "vue-router";
 import ReviewScore from "./ReviewScore.vue";
 import ReviewList from "./ReviewList.vue";
 import ReviewButton from "./ReviewButton";
 
+// const store = useStore();
+// let titleCount = computed(() => store.getters.getTotal.titleCount);
 // import { useRoute } from "vue-router";
 // export default {
 //   components: {

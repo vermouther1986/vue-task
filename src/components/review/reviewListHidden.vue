@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div id="p-reviewMore" aria-hidden="false">
     <ul class="g-reviewList">
       <li class="g-reviewList_item">
@@ -7,23 +7,23 @@
             <star-rating
               class="star"
               :star-size="20"
-              :rating="review1.rating"
+              :rating="1"
               :read-only="true"
               :increment="0.01"
               :show-rating="false"
             ></star-rating>
-            <span :data-score="review1.rating">
+            <span :data-score="1">
               <span class="g-clip">text.product.review.Rating</span>
             </span>
           </p>
           <p class="g-reviewList_user">
-            <b>{{ review1.nickName }}</b
+            <b>{{ 1 }}</b
             >さん &emsp; 2020/04/08
           </p>
         </div>
-        <p class="g-reviewList_info">{{ review1.nickName }}</p>
-        <p class="g-reviewList_h">{{ review1.title }}</p>
-        <p>{{ review1.content }}</p>
+        <p class="g-reviewList_info">{{ 1 }}</p>
+        <p class="g-reviewList_h">{{ 1 }}</p>
+        <p>{{ 1 }}</p>
         <p class="g-reviewList_like">
           <a
             class="g-link reviewLike3"
@@ -32,7 +32,7 @@
             data="5e8dcef53c32e10040000150"
             data-clickable=""
             ><i class="g-s g-s-like-g" aria-hidden="true"></i
-            ><span>参考になった（{{ review.count }}人）</span></a
+            ><span>参考になった（1人）</span></a
           >
         </p>
       </li>
@@ -63,4 +63,4 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped></style> -->

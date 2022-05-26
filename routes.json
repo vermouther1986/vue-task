@@ -1,7 +1,7 @@
 {
 
     "/goods/review/total/:goodsId": "/ReviewTotal?goodsId=:goodsId",
-    "/goods/review/list/:goodsId": "/goodsReview?goodsId=:goodsId",
+    "/goods/review/goodsId/:goodsId/offset/:offset":"/review?goodsId=:goodsId,offset=:offset",
     "/goods/review/rating/:goodsId": "/goodsReviewRating?goodsId=:goodsId"
-    
+   
 }

@@ -1,6 +1,6 @@
 <template>
   <li class="g-reviewList_item">
-    <p class="g-label-brand g-reviewList_label">ピックアップレビュー</p>
+    <!-- <p class="g-label-brand g-reviewList_label">ピックアップレビュー</p> -->
     <div class="g-lg-flow-sm">
       <star-rating
         class="star"
@@ -34,15 +34,30 @@
       {{ review.content }}
     </p>
     <ul class="g-sm-flow-sm g-lg-flow g-reviewList_pics">
-      <li>
+      <!-- <li>
         <img
           class="g-fw p-review-gallery_photo"
-          :src="photo1"
+          :src="review.photo1"
           alt="0"
           aria-expanded="false"
           aria-controls="p-reviewGallerySwipModal"
         />
-      </li>
+      </li> -->
+      <!-- //image -->
+      <!-- <div id="imagesilder">
+        <img
+          class="image"
+          v-for="(image, i) in images"
+          :src="image"
+          :key="i"
+          @click="index = i"
+        />
+        <vue-gallery-slideshow
+          :images="images"
+          :index="index"
+          @close="index = null"
+        ></vue-gallery-slideshow>
+      </div> -->
     </ul>
     <p class="g-reviewList_like">
       <a
@@ -52,6 +67,7 @@
         data="626f252eb5f952006200018b"
         data-clickable=""
         ><i class="g-s g-s-like-g" aria-hidden="true"></i
+        ><span class="material-symbols-outlined"> thumb_up </span
         ><span>参考になった（{{ review.count }}）</span></a
       >
     </p>
@@ -60,8 +76,16 @@
 
 <script>
 import StarRating from "vue-star-rating";
+// import VueGallerySlideshow from "vue-gallery-slideshow";
 export default {
+  data() {
+    return {
+      //     images: [this.photo1, this.photo2],
+      //     index: null,
+    };
+  },
   components: {
+    // VueGallerySlideshow,
     StarRating,
   },
   props: {
@@ -81,7 +105,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 g-reviewList_item {
   padding: 20px 0;
 }

@@ -55,6 +55,10 @@ onMounted(() => {
   store.dispatch("setTotal", goodsId);
 });
 let scoreTotal = computed(() => store.getters.getTotal);
+//箭头function可以不用return
+// let ratingList = computed(() => {
+//   // //console.log("store.getters.getReviewRating", store.getters.getReviewRating);
+//   // return store.getters.getReviewRating;
 </script>
 
 <style>

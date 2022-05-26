@@ -1,32 +1,73 @@
-const url = "http://localhost:3000/goods/review/list/"; 
+// import hotGoods from "../home/hotGoods";
+
+// const url = "http://localhost:3000/goods/review/list/"; 
+const url = "http://localhost:3000/goods/review/goodsId/:goodsId/offset/:offset"; 
  const headers = { Accept: "application/json" };
  
  export default {
   state: {
-    reviewslist:[],
+    // goods:{},
+    review:{},
+    showed:false,
+    reviewlist:[],
    },
    mutations: {
      //syncrous
-     setreviewsList(state, payload) {
-     state.reviewslist.push(...payload);
-      //state.reviewslist = payload[0];
-      console.log("array push ", payload);
+    //  setreviewsList(state, payload) {
+    //  state.reviewslist.push(...payload);
+    //   //state.reviewslist = payload[0];
+    //   console.log("array push ", payload);
+      // reviewlist
+      setReview(state, payload) {
+        // state.reviewslist.push(...payload);
+         state.review = payload[0];
+         console.log("array push ", payload);
      },
+     setReviewList(state, payload) {
+       state.reviewlist.push(...payload);
+      //  state.reviews = payload[0];
+       console.log("array push ", payload);
+   },
+
+   setShowed(state, payload) {
+    // state.reviewslist.push(...payload);
+    state.showed = payload;
+   
+},
    },
    actions: {
      //asyncronous
-    async  setreviewsList(state,payload) {
-      const reviewlist = await fetch(url + payload, { headers });
-       const j = await reviewlist.json();
-       state.commit("setreviewsList", j);
-       console.log("in setreviewsList method", j);
+    async  setReview(context,payload) {
+      const {goodsId,offset} = payload ;
+      const newurl=url
+      .replace(":goodsId",goodsId)
+      .replace(":offset",offset)
+      const goods = await fetch(newurl,{headers})
+       const j = await goods.json();
+       if(offset===0){
+
+        context.commit("setReview", j);
+       }else{
+         context.commit("setShowed",true);
+         context.commit("setReviewList",j[0].reviewlist);
+       }
      },
    },
   getters: {
-    getreviewsList: (state) => {
-       console.log("in getreviewsList method", state.reviewslist);
-       console.log(state.reviewslist);
-       return state.reviewslist;
+    getReview: (state) => {
+      console.log("in getreviews method", state.getReview);
+      console.log(state.getReview);
+      return state.getReview;
+    },
+    getReviewList: (state) => {
+       console.log("in  getReviewList method", state.reviewlist);
+       console.log(state.reviewlist);
+       return state.reviewlist;
      },
+     getShowed: (state) => {
+      console.log("in getShowed method", state.showed);
+      console.log(state.showed);
+      return state.showed;
+    },
   },
  };
