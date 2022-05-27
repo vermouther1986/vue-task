@@ -8,17 +8,14 @@
         v-bind:review="review"
       ></review-list-view>
     </ul>
-    <div
-      v-if="showed"
-      class="g-foot-v g-foot-sm"
-      id="js-review-more"
-      aria-hidden="true"
-    >
-      <review-list-hidden
-        v-for="(review2, index2) in reviewList2"
-        :key="index2"
-        v-bind:review="review2"
-      ></review-list-hidden>
+    <div v-if="showed" class="g-foot-v g-foot-sm" id="js-review-more">
+      <ul class="g-reviewList">
+        <review-list-view
+          v-for="(review2, index2) in reviewList2"
+          :key="index2"
+          v-bind:review="review2"
+        ></review-list-view>
+      </ul>
     </div>
   </div>
   <!-- //隐藏reviewbuttton -->
@@ -59,7 +56,7 @@ const store = useStore();
 const showMore = () => {
   if (!showed.value) {
     if (reviewList2.value.length === 0) {
-      store.dispatch(" setReview", { goodsId: goodsId, offset: 3 });
+      store.dispatch("setReview", { goodsId: goodsId, offset: 3 });
     } else {
       store.commit("setShowed", true);
     }
@@ -71,10 +68,10 @@ onMounted(() => {
   store.dispatch("setReview", { goodsId: goodsId, offset: 0 });
 });
 
-let reviewCount = computed(() => store.getters.getReview.reviewCount);
-let reviews = computed(() => store.getters.getReview.reviewList);
-let reviewList2 = computed(() => store.getters.getReviewList);
-let showed = computed(() => store.getters.getShowed);
+const reviewCount = computed(() => store.getters.getReview.reviewCount);
+const reviews = computed(() => store.getters.getReview.reviewList);
+const reviewList2 = computed(() => store.getters.getReviewList);
+const showed = computed(() => store.getters.getShowed);
 
 const text = computed(() => {
   if (!showed.value && reviews.value !== undefined) {

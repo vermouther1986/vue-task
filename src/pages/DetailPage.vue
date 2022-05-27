@@ -1,4 +1,5 @@
 <template>
+  <qa-container></qa-container>
   <review-container> </review-container>
 </template>
 
@@ -7,9 +8,10 @@
 // import { useStore } from "vuex";
 // import { computed, onMounted } from "vue";
 import ReviewContainer from "../components/review/ReviewContainer";
+import QaContainer from "../components/goodsQa/QaContainer.vue";
 
 export default {
-  components: { ReviewContainer },
+  components: { ReviewContainer, QaContainer },
 };
 
 // const route = useRoute();

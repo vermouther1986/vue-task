@@ -37,7 +37,7 @@ const url = "http://localhost:3000/goods/review/goodsId/:goodsId/offset/:offset"
    },
    actions: {
      //asyncronous
-    async  setReview(context,payload) {
+    async setReview(context,payload) {
       const {goodsId,offset} = payload ;
       const newurl=url
       .replace(":goodsId",goodsId)
@@ -46,7 +46,7 @@ const url = "http://localhost:3000/goods/review/goodsId/:goodsId/offset/:offset"
        const j = await goods.json();
        if(offset===0){
 
-        context.commit("setReview", j);
+        context.commit("setReview",j);
        }else{
          context.commit("setShowed",true);
          context.commit("setReviewList",j[0].reviewList);
@@ -60,7 +60,7 @@ const url = "http://localhost:3000/goods/review/goodsId/:goodsId/offset/:offset"
       return state.review;
     },
     getReviewList: (state) => {
-       console.log("in  getReviewList method", state.reviewList);
+       console.log("in getReviewList method", state.reviewList);
        console.log(state.reviewList);
        return state.reviewList;
      },

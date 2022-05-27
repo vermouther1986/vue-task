@@ -36,10 +36,10 @@ export default {
   },
   data() {
     return {
-      width: this.ratingobj.ratingCount *100+"%",
+      width: this.ratingobj.ratingCount + "%",
       title:
         "レビューの" +
-        this.ratingobj.ratingCount*100 +
+        this.ratingobj.ratingCount +
         "%に星" +
         this.ratingobj.rating +
         "つが付いています。",
