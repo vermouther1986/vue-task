@@ -2,8 +2,7 @@
   <div class="g-lg-flow-sm p-reviw-graph-area-row-sm">
     <div class="g-score p-reviw-graph-area-score">
       <span :data-score="ratingobj.rating"
-        >::before<span class="g-clip">{{ ratingobj.rating }}</span
-        >::after</span
+        ><span class="g-clip">{{ ratingobj.rating }}</span></span
       >
     </div>
     <div
@@ -14,6 +13,7 @@
       <div class="a-meter-bar" :style="{ width: width }"></div>
     </div>
     <a
+      @click="clickRating(ratingobj.rating)"
       class="g-link g-link-visble"
       id="js-rate5"
       :data-rate="ratingobj.rating"
@@ -21,32 +21,48 @@
       data-clickable=""
       >{{ ratingobj.ratingCount }}人</a
     >
+    <p>{{ sum }}</p>
   </div>
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
   props: {
     ratingobj: {
       rating: Number,
-      allScore: Number,
-      reviewCount: Number,
       ratingCount: Number,
     },
   },
   data() {
     return {
-      width: this.ratingobj.ratingCount + "%",
+      width: this.ratingobj.ratingCount * 100 + "%",
       title:
         "レビューの" +
-        this.ratingobj.ratingCount +
+        this.ratingobj.ratingCount * 100 +
         "%に星" +
         this.ratingobj.rating +
         "つが付いています。",
     };
   },
 
-  methods: {},
+  methods: {
+    async clickRating(rating) {
+      if (
+        this.$store.getters.getReviewList.length === 0 &&
+        this.$store.getters.getReview.reviewCount > 3
+      ) {
+        await this.$store.dispatch("setReview", {
+          goodsId: this.$route.params.goodsId,
+          offset: 3,
+        });
+      }
+      this.filterReviews(rating);
+    },
+    ...mapMutations(["filterReviews"]),
+  },
+
+  computed: {},
 };
 </script>
 

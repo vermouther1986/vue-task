@@ -61,7 +61,9 @@
         data-clickable=""
         ><i class="g-s g-s-like-g" aria-hidden="true"></i
         ><span class="material-symbols-outlined"> thumb_up </span
-        ><span>参考になった（{{ review.count }}）</span>
+        ><span @click="btn = !btn"
+          >参考になった（{{ review.count }}）{{ message }}</span
+        >
         >
       </a>
     </p>
@@ -86,7 +88,9 @@ export default {
       ],
 
       //     index: null,
-      id: 0,
+counts:this.review.count ,
+      code: 200,
+      btn: false,
     };
   },
   components: {
@@ -111,12 +115,24 @@ export default {
       photo5: String,
     },
   },
-  methods: {},
-  inited(viewer) {
-    this.$viewer = viewer;
+  computed: {
+    message() {
+      if (this.btn && this.code === 200) {
+        return this.counts;
+      } else if (this.btn && !this.code === 200) {
+        return "まだ";
+      } else {
+        return null;
+      }
+    },
   },
-  show() {
-    this.$viewer.show();
+  methods: {
+    inited(viewer) {
+      this.$viewer = viewer;
+    },
+    show() {
+      this.$viewer.show();
+    },
   },
 };
 </script>

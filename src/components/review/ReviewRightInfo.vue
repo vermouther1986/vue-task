@@ -23,6 +23,7 @@ onMounted(() => {
 let ratinglist = computed(() => {
   return store.getters.getRating;
 });
+
 </script>
 
 <style></style>
