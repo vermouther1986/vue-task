@@ -11,7 +11,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .n-review-btn {
   text-align: center;
   padding-bottom: 20px;

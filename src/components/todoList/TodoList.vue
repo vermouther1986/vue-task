@@ -88,6 +88,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import "../css/NewDolist.css";
 </style>

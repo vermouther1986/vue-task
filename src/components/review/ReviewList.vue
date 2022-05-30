@@ -19,7 +19,12 @@
     </div>
   </div>
   <!-- //隐藏reviewbuttton -->
-  <div class="g-foot-v g-foot-sm" id="js-review-more" aria-hidden="false">
+  <div
+    v-if="showtext"
+    class="g-foot-v g-foot-sm"
+    id="js-review-more"
+    aria-hidden="false"
+  >
     <p class="g-align-tc">
       <a
         @click="showMore"
@@ -53,10 +58,11 @@ const route = useRoute();
 const goodsId = route.params.goodsId;
 const store = useStore();
 //click
-const showMore = () => {
+const showMore = async () => {
   if (!showed.value) {
     if (reviewList2.value.length === 0) {
-      store.dispatch("setReview", { goodsId: goodsId, offset: 3 });
+      await store.dispatch("setReview", { goodsId: goodsId, offset: 3 });
+      store.commit("setShowed", true);
     } else {
       store.commit("setShowed", true);
     }
@@ -72,6 +78,16 @@ const reviewCount = computed(() => store.getters.getReview.reviewCount);
 const reviews = computed(() => store.getters.getReview.reviewList);
 const reviewList2 = computed(() => store.getters.getReviewList);
 const showed = computed(() => store.getters.getShowed);
+// const allReviewList = computed(() => store.getters.getfilterReviews);
+// const ratings = computed(() => store.getters.getRating.rating);
+
+// let ratingCount = computed(() => {
+//   let arr = 0;
+//   for (let i in ratings.value) {
+//     arr = ratings[i];
+//   }
+//   return arr;
+// });
 
 const text = computed(() => {
   if (!showed.value && reviews.value !== undefined) {
@@ -82,6 +98,22 @@ const text = computed(() => {
     return "閉じる";
   }
 });
+const showtext = computed(() => {
+  if (reviewCount.value < 3) {
+    return false;
+  } else {
+    return true;
+  }
+});
+// const textshow = computed(() => {
+//   if (!showed.value && reviews.value !== undefined) {
+//     return (
+
+//     );
+//   } else {
+//     return "閉じる";
+//   }
+// });
 
 // onMounted(() => {
 //   store.dispatch("setreviewsList", goodsId);
@@ -94,7 +126,7 @@ const text = computed(() => {
 // };
 </script>
 
-<style scoped>
+<style>
 ul,
 ol {
   padding: 0;

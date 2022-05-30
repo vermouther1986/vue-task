@@ -41,14 +41,14 @@ export default {
         state.allReviewList.push(...state.reviewList);
       }
       const arr = state.allReviewList.filter(
-        (review) => review.rating === rating
+        (reviews) => reviews.rating === rating
       );
-      if (arr.lenght > 3) {
-        state.review.reviewList = arr.slice(0,3);
-        state.reviewList =arr.slice(3);
-      }else{
-        state.review.reviewList=arr;
-
+      state.review.reviewCount = arr.length;
+      if (arr.length > 3) {
+        state.review.reviewList = arr.slice(0, 3);
+        state.reviewList = arr.slice(3);
+      } else {
+        state.review.reviewList = arr;
       }
     },
   },
@@ -64,7 +64,6 @@ export default {
       if (offset === 0) {
         context.commit("setReview", j);
       } else {
-        context.commit("setShowed", true);
         context.commit("setReviewList", j[0].reviewList);
       }
     },
@@ -84,6 +83,11 @@ export default {
       console.log("in getShowed method", state.showed);
       console.log(state.showed);
       return state.showed;
+    },
+    getfilterReviews: (state) => {
+      console.log("in getfilterReviews method", state.allReviewList);
+      console.log(state.allReviewList);
+      return state.allReviewList;
     },
   },
 };

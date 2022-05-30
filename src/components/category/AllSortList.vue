@@ -64,7 +64,7 @@ const mouseLeaveFun = (event) => {
 };
 </script>
 
-<style>
+<style scoped>
 .all-sort-list {
   position: relative;
   float: left;

@@ -62,7 +62,7 @@ let scoreTotal = computed(() => store.getters.getTotal);
 //   // return store.getters.getReviewRating;
 </script>
 
-<style>
+<style scoped>
 .p-reviewScore {
   display: flex;
   margin-bottom: 15px;

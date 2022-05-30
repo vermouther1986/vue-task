@@ -56,7 +56,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .p-reviw-graph-area {
   box-sizing: border-box;
   display: inline-block;

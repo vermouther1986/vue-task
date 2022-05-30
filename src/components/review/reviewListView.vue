@@ -34,22 +34,16 @@
         /> -->
 
         <!-- image -->
-        <template>
-          <div class="imageinfo" v-if="review.photo1 != null">
-            <viewer
-              :images="images"
-              @inited="inited"
-              class="viewer"
-              ref="viewer"
-            >
-              <template #default="scope">
-                <img v-for="src in scope.images" :src="src" :key="src" />
-                {{ scope.options }}
-              </template>
-            </viewer>
-            <button type="button" @click="show">Show</button>
-          </div>
-        </template>
+
+        <div class="imageinfo" v-if="review.photo1 != null">
+          <viewer :images="images" @inited="inited" class="viewer" ref="viewer">
+            <template #default="scope">
+              <img v-for="src in scope.images" :src="src" :key="src" />
+              {{ scope.options }}
+            </template>
+          </viewer>
+          <!-- <button type="button" @click="show">Show</button> -->
+        </div>
       </li>
     </ul>
     <p class="g-reviewList_like">
@@ -88,7 +82,7 @@ export default {
       ],
 
       //     index: null,
-counts:this.review.count ,
+      counts: this.review.count,
       code: 200,
       btn: false,
     };
@@ -138,10 +132,6 @@ counts:this.review.count ,
 </script>
 
 <style>
-img {
-  width: 100%;
-}
-
 g-reviewList_item {
   padding: 20px 0;
 }
@@ -149,10 +139,7 @@ g-reviewList_item {
   padding: 15px 0;
   border-bottom: 1px dashed #dbdbdb;
 }
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
+
 ul,
 ol {
   padding: 0;
@@ -164,12 +151,7 @@ ol {
 .g-reviewList_label {
   margin-bottom: 15px;
 }
-.g-label-brand,
-.g-label-price,
-.g-label-maker,
-.g-label-required {
-  font-size: 1.2rem;
-}
+
 .g-label-brand {
   color: #009e96;
   border: 1px px solid #009e96;
@@ -206,13 +188,7 @@ p {
   margin-bottom: 10px;
   margin-left: 10px;
 }
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
+
 .g-reviewList_info {
   margin-top: 10px;
 }
@@ -269,6 +245,7 @@ a {
   color: #333;
 }
 ul {
+  display: flex;
   padding: 0;
   list-style: none;
   padding: 0;
@@ -292,6 +269,7 @@ ul {
 .g-reviewList_pics li {
   width: 84px;
 }
+
 li {
   display: list-item;
   text-align: -webkit-match-parent;
@@ -309,5 +287,14 @@ img {
   vertical-align: bottom;
   border: 0;
   height: auto;
+}
+.images {
+  height: 500px;
+}
+.image {
+  height: 200px;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
 }
 </style>

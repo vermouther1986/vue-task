@@ -1,24 +1,22 @@
 <template>
-  
-    <a
-      class="goods-link"
-      :href="link"
-      @mouseover="toggle"
-      @mouseleave="moveShowComment = false"
-    >
-      <div class="info discount">{{ tittle }}</div>
-      <img :src="imgSrc" :alt="name" />
-      <p class="name">{{ name }}</p>
-      <p class="item_price">{{ price }}</p>
-      <!-- <p class="counter">{{ counter }}</p> -->
+  <a
+    class="goods-link"
+    :href="link"
+    @mouseover="toggle"
+    @mouseleave="moveShowComment = false"
+  >
+    <div class="info discount">{{ tittle }}</div>
+    <img :src="imgSrc" :alt="name" />
+    <p class="name">{{ name }}</p>
+    <p class="item_price">{{ price }}</p>
+    <!-- <p class="counter">{{ counter }}</p> -->
 
-      <transition name="slide-fade">
-        <div v-if="moveShowComment" class="comment">
-          <p>{{ commentTop }}</p>
-        </div>
-      </transition>
-    </a>
-  
+    <transition name="slide-fade">
+      <div v-if="moveShowComment" class="comment">
+        <p>{{ commentTop }}</p>
+      </div>
+    </transition>
+  </a>
 </template>
 
 <script>
@@ -52,7 +50,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .goods-link {
   display: flex;
   flex-direction: column;

@@ -5,25 +5,21 @@
     id="js-product-reviews"
     aria-hidden="false"
   >
-    <div id="js-replace">
-      <input type="hidden" name="productCodePost" value="" />
-      <div id="normal-productreview">
-        <h2 class="g-h-2 g-h-i p-hd">
-          <i class="g-s g-s-comment" aria-hidden="true"></i>
-          <span>レビュー</span>
-        </h2>
-        <div class="p-reviewScore p-reviewScore-sm">
-          <review-score></review-score>
-        </div>
-        <review-totil> </review-totil>
-        <input type="hidden" id="numberOfReviews" value="7" />
-        <review-button></review-button>
-        <div id="js-reviewList">
-          <review-list></review-list>
-        </div>
+    <input type="hidden" name="productCodePost" value="" />
+    <div id="normal-productreview">
+      <h2 class="g-h-2 g-h-i p-hd">
+        <i class="g-s g-s-comment" aria-hidden="true"></i>
+        <span>レビュー</span>
+      </h2>
+      <div class="p-reviewScore p-reviewScore-sm">
+        <review-score></review-score>
       </div>
+      <review-totil> </review-totil>
+      <input type="hidden" id="numberOfReviews" value="7" />
+      <review-button></review-button>
+
+      <review-list></review-list>
     </div>
-   
   </section>
 </template>
 
