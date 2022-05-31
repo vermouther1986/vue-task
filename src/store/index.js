@@ -1,11 +1,12 @@
-import { createStore } from 'vuex'
-import category from './home/category'
-import hotGoods from './home/hotGoods'
-import swiper from './home/swiper'
-import reviewScore from './review/reviewScore'
-import scoreTotal from './review/scoreTotal'
+import { createStore } from "vuex";
+import category from "./home/category";
+import hotGoods from "./home/hotGoods";
+import swiper from "./home/swiper";
+import reviewScore from "./review/reviewScore";
+import scoreTotal from "./review/scoreTotal";
 // import reviewRouter from '../router/reviewRouter'
-import reviewList from './review/reviewList'
+import reviewList from "./review/reviewList";
+import QaList from "./Qa/QaList";
 
 export default createStore({
   modules: {
@@ -15,8 +16,8 @@ export default createStore({
     reviewScore,
     scoreTotal,
     reviewList,
+    QaList,
     // revireewRouter
   },
-})
+});
 // Vue.use(Vuex);
-

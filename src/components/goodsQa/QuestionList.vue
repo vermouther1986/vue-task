@@ -2,13 +2,11 @@
   <div class="zv-cqa">
     <div class="zv-cqa-question">
       <span class="zv-space">Q. </span>
-      <span class="zv-cqa-q-text"
-        >背もたれが倒せるベッドには使用できないですか？</span
-      >
+      <span class="zv-cqa-q-text">{{ qeContents }}</span>
     </div>
     <div class="zv-cqa-q-info">
       <span class="zv-cqa-q-reviewer">投稿者&nbsp; </span>
-      <span class="zv-cqa-q-created-at">投稿日&nbsp;2022年02月10日</span>
+      <span class="zv-cqa-q-created-at">投稿日&nbsp;{{ qeDate }}</span>
     </div>
     <div class="zv-cqa-answers">
       <div class="zv-cqa-answer zv-cqa-answer-first">
@@ -16,14 +14,16 @@
         <div class="zv-cqa-a-content">
           <div class="zv-cqa-a-text">
             <p class="zv-p">
-              折り曲げて使用していただく仕様になっていないため、リクライニングするベッドにはご使用いただけません。
+              {{ Contents }}
             </p>
           </div>
 
           <div class="zv-cqa-a-info">
             <span class="zv-space"></span>
-            <span class="zv-cqa-a-reviewer">回答者&nbsp; Nitori-QA-001</span>
-            <span class="zv-cqa-a-created-at">回答日&nbsp;2022年02月11日</span>
+            <span class="zv-cqa-a-reviewer">回答者&nbsp; {{ answerName }}</span>
+            <span class="zv-cqa-a-created-at"
+              >回答日&nbsp;{{ answerDate }}</span
+            >
           </div>
           <div class="zv-helpful-form" data-answer-id="215713">
             <span class="zv-space"></span>
@@ -57,7 +57,7 @@
                   class="zv-helpful zv-helpful-num zv-helpful-no-num zv-helpful-no-num-215713"
                   data-count="215713"
                   id="ZVHelpfulNoNum-215713"
-                  >(0人)</span
+                  >({{ count }})</span
                 >
               </span>
             </span>
@@ -101,7 +101,84 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    qeContents: String,
+    qeDate: String,
+    Contents: String,
+    answerName: String,
+    answerDate: String,
+    count: Number,
+  },
+};
+</script>
 
-<script setup lang="ts"></script>
-
-<style></style>
+<style>
+.zv-cqa-question {
+  padding: 15px 0 0;
+}
+.zv-space {
+  width: 20px;
+  display: block;
+  float: left;
+  font-weight: bold;
+}
+.zv-cqa-q-text {
+  font-weight: bold;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+#ZVCQA span.zv-cqa-q-reviewer {
+  display: none;
+  margin-left: 20px;
+  font-size: 13px;
+  margin-left: 10px;
+  color: #555;
+}
+#ZVCQA span.zv-cqa-q-created-at,
+#ZVCQA span.zv-cqa-a-created-at {
+  margin-left: 0;
+}
+.zv-cqa-answer {
+  margin: 10px 0 0 10px;
+}
+.zv-space {
+  width: 20px;
+  display: block;
+  float: left;
+  font-weight: bold;
+}
+.zv-cqa-a-content {
+  display: block;
+  width: calc(100% - 20px);
+  float: none;
+}
+.zv-p {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+.zv-cqa-a-reviewer,
+.zv-cqa-a-created-at {
+  font-size: 13px;
+  color: #555;
+}
+#ZVCQA div.zv-helpful-form {
+  line-height: 1;
+  margin-top: 15px;
+}
+#ZVCQA .zv-helpful-form {
+  display: inline-block;
+  color: #555;
+}
+.zv-error-message {
+  color: red;
+  display: none;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+#ZVCQA div.zv-helpful-form {
+  line-height: 1;
+  margin-top: 15px px;
+}
+</style>

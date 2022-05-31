@@ -675,7 +675,7 @@
 
   "goodsqa": [{
     "goodsId": 10195,
-    "totalCount": 2,
+    "totalCount": 4,
     "qaList": [{
         "qeContents": "背もたれが倒せるベッドには使用できないですか？",
         "qeDate": "2022年03月05日",
@@ -690,7 +690,7 @@
         "answerContents": "両面使用は可能でしょうか?。",
         "answerName": "Nitori-QA-004",
         "answerDate": "2021年12月07日",
-        "count": 2
+        "count": 1
       },
       {
         "qeContents": "両面使用は可能でしょうか?",
