@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "tittle": "智能降噪 长久续航",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
       "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
@@ -37,7 +37,7 @@
     },
     {
       "id": 4,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "tittle": "智能降噪 长久续航",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
       "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
@@ -61,7 +61,7 @@
     },
     {
       "id": 6,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "tittle": "智能降噪 长久续航",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
       "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
@@ -84,7 +84,7 @@
   ],
   "hotGoodses": [{
       "id": 1,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "tittle": "智能降噪 长久续航",
       "imgSrc": "http://localhost:8080/assets/images/3bfc7c72-b56a-4088-8acf-e01e830ce72a.jpg",
       "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
@@ -108,7 +108,7 @@
     },
     {
       "id": 3,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "tittle": "智能降噪 长久续航",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
       "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
@@ -129,7 +129,7 @@
 
     },
     {
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "tittle": "智能降噪 长久续航",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
       "name": "索尼1 WH-1000XM3 头戴式耳机 麒麟显卡 16G内...",
@@ -151,7 +151,7 @@
     },
     {
       "id": 2,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
       "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
 
@@ -165,7 +165,7 @@
     },
     {
       "id": 1,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "imgSrc": "https://newbee-mall.oss-cn-beijing.aliyuncs.com/images/mate40-white.png",
       "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
 
@@ -179,7 +179,7 @@
     },
     {
       "id": 3,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png",
       "name": "华为 HUAWEI Mate 40 Pro 全网通5G手机"
 
@@ -197,7 +197,7 @@
           "link": "/goods/detail/10195",
           "categories": [{
               "categoryName": "卷发器",
-              "link": "/goods/detail/10195"
+              "link": "/goods/detail/10196"
             },
             {
               "categoryName": "电饭煲",
@@ -240,7 +240,7 @@
         "link": "/goods/detail/10195",
         "categories": [{
           "categoryName": "沙发",
-          "link": "/goods/detail/10195"
+          "link": "/goods/detail/10196"
         }]
       }]
 
@@ -272,7 +272,7 @@
       "link": "/goods/detail/10195",
       "categories": [{
           "categoryName": "游戏",
-          "link": "/goods/detail/10195",
+          "link": "/goods/detail/10196",
           "categories": [{
 
             "categoryName": "LOL",
@@ -296,7 +296,7 @@
           "categories": [{
 
             "categoryName": "LOL",
-            "link": "/goods/detail/10195"
+            "link": "/goods/detail/10196"
 
 
           }]
@@ -318,7 +318,7 @@
     },
     {
       "id": 2,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "tittle": "智能降噪 长久续航",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png"
     },
@@ -330,7 +330,7 @@
     },
     {
       "id": 4,
-      "link": "/goods/detail/10195",
+      "link": "/goods/detail/10196",
       "tittle": "索尼1 WH-1000XM3 ",
       "imgSrc": "http://localhost:8080/assets/image/iphone-13-pink-select-2021.png"
     }
@@ -348,7 +348,7 @@
   ],
 
   "reviewScore": [{
-      "link": "/detail/review/10195",
+      "link": "/detail/review/10196",
       "goodsId": 10195,
       "allScore": 4,
       "reviewCount": 8,
@@ -673,43 +673,68 @@
     }
   ],
 
-  "goodsqa": [{
-    "goodsId": 10195,
-    "totalCount": 4,
-    "qaList": [{
-        "qeContents": "背もたれが倒せるベッドには使用できないですか？",
-        "qeDate": "2022年03月05日",
-        "Contents": "折り曲げて使用していただく仕様になっていないため、リクライニングするベッドにはご使用いただけません。",
-        "answerName": "Nitori-QA-004",
-        "answerDate": "2022年02月10日",
-        "count": 3
-      },
-      {
-        "qeContents": "ダブルは真ん中に折り目がありますか？",
-        "qeDate": " 2021年11月09日",
-        "answerContents": "両面使用は可能でしょうか?。",
-        "answerName": "Nitori-QA-004",
-        "answerDate": "2021年12月07日",
-        "count": 1
-      },
-      {
-        "qeContents": "両面使用は可能でしょうか?",
-        "qeDate": "2021年08月23日",
-        "answerContents": "A.このマットレスは、片面仕様となっております。",
-        "answerDate": "2022年02月10日",
-        "count": 3
-      },
-      {
-        "qeContents": "製造国は、どこですか？",
-        "qeDate": "2021年09月15日",
-        "answerContents": "こちらの商品は中国製です。",
-        "answerName": "Nitori-QA-004",
-        "answerDate": "2021年09月16日",
-        "count": 4
-      }
+  "goodsqa":
 
-    ]
-  }]
+    [{
+      "goodsId": 10195,
+      "totalCount": 4,
+      "qaList": [{
+          "qeContents": "背もたれが倒せるベッドには使用できないですか？",
+          "qeDate": "2022年03月05日",
+          "Contents": "折り曲げて使用していただく仕様になっていないため、リクライニングするベッドにはご使用いただけません。",
+          "answerName": "Nitori-QA-004",
+          "answerDate": "2022年02月10日",
+          "count": 3
+        },
+        {
+          "qeContents": "ダブルは真ん中に折り目がありますか？",
+          "qeDate": " 2021年11月09日",
+          "answerContents": "両面使用は可能でしょうか?。",
+          "answerName": "Nitori-QA-004",
+          "answerDate": "2021年12月07日",
+          "count": 1
+        },
+        {
+          "qeContents": "両面使用は可能でしょうか?",
+          "qeDate": "2021年08月23日",
+          "answerContents": "A.このマットレスは、片面仕様となっております。",
+          "answerDate": "2022年02月10日",
+          "count": 3
+        },
+        {
+          "qeContents": "製造国は、どこですか？",
+          "qeDate": "2021年09月15日",
+          "answerContents": "こちらの商品は中国製です。",
+          "answerName": "Nitori-QA-004",
+          "answerDate": "2021年09月16日",
+          "count": 4
+        }
+
+      ]
+    }],
+
+  "goodsStyle": [{
+      "goodsId": 10195,
+      "code": 5654441,
+      "color": "ホワイト",
+      "size": "幅90x奥行180cm",
+      "material": "ポリエステル",
+      "weight": "約22kg",
+      "warranty": "1年",
+      "packagesize": "幅90x奥行180cm"
+
+    },
+    {
+      "goodsId": 10196,
+      "code": 4012541,
+      "color": "ライトブラウン",
+      "size": "幅130×奥行75×高さ70cm",
+      "material": "天然木",
+      "weight": "約21.7kg",
+      "warranty": "1年",
+      "packagesize": "幅90x奥行180cm"
+    }
+  ]
 
 
 

@@ -6,6 +6,7 @@ export default {
     Qalist: { qaList: [] },
     currentPageNo: 1,
     totalPage: Number,
+    sortlist: [],
   },
   mutations: {
     //syncrous
@@ -27,12 +28,16 @@ export default {
     },
     sortList(state, value) {
       if (value === "total_yes") {
-        state.Qalist.qaList.sort((a, b) => b.count - a.count);
-      } else {
-        state.Qalist.qaList.sort(
+        const arr = state.Qalist.qaList.sort((a, b) => b.count - a.count);
+        state.Qalist.qaList = arr;
+      }
+      if (value === "created_at") {
+        const arr = state.Qalist.qaList.sort(
           (a, b) => new Date(b.answerDate) - new Date(a.answerDate)
         );
+        state.Qalist.qaList = arr;
       }
+      console.log("sortlist push ", value);
     },
   },
 

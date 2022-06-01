@@ -3,6 +3,6 @@
     "/goods/review/total/:goodsId": "/ReviewTotal?goodsId=:goodsId",
     "/goods/review/goodsId/:goodsId/offset/:offset": "/review?goodsId=:goodsId&offset=:offset",
     "/goods/review/rating/:goodsId": "/goodsReviewRating?goodsId=:goodsId",
-    "/goods/quesiton/:goodsId": "/goodsqa?goodsId =:goodsId"
-
+    "/goods/quesiton/:goodsId": "/goodsqa?goodsId =:goodsId",
+    "/goods/style/:goodsId": "/goodsStyle?goodsId =:goodsId"
 }

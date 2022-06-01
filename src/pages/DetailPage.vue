@@ -1,6 +1,7 @@
 <template>
+  <product-detail></product-detail>
   <qa-container></qa-container>
-  <review-container> </review-container>
+  <review-container></review-container>
 </template>
 
 <script>
@@ -9,9 +10,10 @@
 // import { computed, onMounted } from "vue";
 import ReviewContainer from "../components/review/ReviewContainer";
 import QaContainer from "../components/goodsQa/QaContainer.vue";
+import ProductDetail from "../components/goodsdetail/productDetail.vue";
 
 export default {
-  components: { ReviewContainer, QaContainer },
+  components: { ReviewContainer, QaContainer, ProductDetail },
 };
 
 // const route = useRoute();

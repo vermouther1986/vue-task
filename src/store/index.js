@@ -7,6 +7,7 @@ import scoreTotal from "./review/scoreTotal";
 // import reviewRouter from '../router/reviewRouter'
 import reviewList from "./review/reviewList";
 import QaList from "./Qa/QaList";
+import goodsStyle from "./goods/goodsstyle";
 
 export default createStore({
   modules: {
@@ -17,6 +18,7 @@ export default createStore({
     scoreTotal,
     reviewList,
     QaList,
+    goodsStyle,
     // revireewRouter
   },
 });

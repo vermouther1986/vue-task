@@ -62,31 +62,6 @@
               </span>
             </span>
             <span class="zv-separator">|</span>
-            <div class="zv-popupModal1">
-              <input type="radio" name="modalPop" id="pop11215713" />
-              <label for="pop11215713">違反を報告</label>
-              <input type="radio" name="modalPop" id="pop12215713" />
-              <label for="pop12215713">CLOSE</label>
-              <input type="radio" name="modalPop" id="pop13215713" />
-              <label for="pop13215713">×</label>
-              <div class="zv-modalPopup2">
-                <div class="zv-modalPopup3">
-                  <h2 class="zv-modalTitle">違反を報告</h2>
-                  <div class="zv-modalMain">
-                    <p>
-                      このコンテンツは不適切であり、削除する必要があると思われる場合は、下のボタンをクリックしてお知らせください。
-                    </p>
-                    <div
-                      class="zv-report zv-btn"
-                      data-post-type="answer"
-                      data-target-id="215713"
-                    >
-                      違反を報告する
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="zv-cqa-comment">
             <div class="zv-cqa-comment-actions">
@@ -114,9 +89,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .zv-cqa-question {
   padding: 15px 0 0;
+}
+.zv-cqa {
+  margin: 0 0 15px;
+  border-bottom: 1px dashed #dbdbdb;
+  padding-bottom: 15px;
 }
 .zv-space {
   width: 20px;
